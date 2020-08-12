@@ -9,9 +9,9 @@ resource "aws_instance" "frontend"{
  count = 4
 
   tags = {
-    Name = "frontend-01"
-    App  = "devops1"
-    Maintainer = "Savatora"
+    Name = "Terra-demo-instances"
+    App  = "CSS1"
+    Maintainer = "Anderson Sibedwo"
   }
 }
 resource "aws_vpc" "main" {
@@ -19,7 +19,7 @@ resource "aws_vpc" "main" {
   instance_tenancy = "default"
 
   tags = {
-    Name = "demo-vpc"
+    Name = "Terra-demo-vpc"
     Purpose = "Jenkins-Terraform Demo"
   }
 }
