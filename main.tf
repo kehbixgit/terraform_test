@@ -11,7 +11,7 @@ resource "aws_instance" "frontend"{
   tags = {
     Name = "Terra-demo-instances"
     App  = "CSS1"
-    Maintainer = "Anderson Sibedwo"
+    Maintainer = "Anderson Savatora"
   }
 }
 resource "aws_vpc" "main" {
