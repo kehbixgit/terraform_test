@@ -6,7 +6,7 @@ resource "aws_instance" "frontend"{
 
   ami = "ami-09d95fab7fff3776c"
   instance_type = "t2.micro"
- count = 2
+ count = 1
 
   tags = {
     Name = "Terra-demo-instances"
@@ -15,7 +15,7 @@ resource "aws_instance" "frontend"{
   }
 }
 resource "aws_vpc" "main" {
-  cidr_block       = "10.0.0.0/16"
+  cidr_block       = "10.20.0.0/16"
   instance_tenancy = "default"
 
   tags = {
