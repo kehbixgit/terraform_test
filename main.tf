@@ -10,12 +10,12 @@ resource "aws_instance" "frontend"{
 
   tags = {
     Name = "Terra-demo-instances"
-    App  = "CSS1"
+    App  = "kbix2020"
     Maintainer = "Anderson Savatora"
   }
 }
 resource "aws_vpc" "main" {
-  cidr_block       = "10.20.0.0/16"
+  cidr_block       = "10.30.0.0/16"
   instance_tenancy = "default"
 
   tags = {
