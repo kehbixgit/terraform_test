@@ -9,7 +9,7 @@ resource "aws_instance" "frontend"{
  count = 1
 
   tags = {
-    Name = "Terra-demo-instances"
+    Name = "DevOpsClass"
     App  = "kbix2020"
     Maintainer = "Anderson Savatora"
   }
